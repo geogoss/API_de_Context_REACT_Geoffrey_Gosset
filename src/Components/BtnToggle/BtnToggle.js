@@ -6,11 +6,13 @@ import {ThemeContext} from '../../Context/ThemeContext'
 
 export default function BtnToggle() {
 
-    const {toggleTheme} = useContext(ThemeContext)
+
+    const {toggleTheme, theme} = useContext(ThemeContext)
+
 
   return <div>
       <button 
       onClick={toggleTheme} 
-      className='btnToggle'>Toggle</button>
+      className= {theme ? 'btnToggle' : 'btnToggle darkBtn'}>{theme ? "Light" : "Dark"}</button>
   </div>;
 }

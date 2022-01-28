@@ -3,10 +3,15 @@
     top: 10px;
     right: 10px;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: none;
+}
+
+.darkBtn{
+    background-color: black;
+    color: white;
 }
